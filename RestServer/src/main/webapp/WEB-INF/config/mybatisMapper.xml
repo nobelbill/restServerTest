@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="service">
+	<resultMap type="com.noelbill.restserver.dataset.Code" id="code">
+		<id column="MAIN_CODE" property="mainCode"/>
+		<result column="SUB_CODE" property="subCode"/>
+		<result column="CODE_NAME" property="codeName"/>
+	</resultMap>
+  <select id="selectCode" resultType="String" resultMap="code">
+  	select * from tb_code where main_code=#{mainCode}
+  </select>
+</mapper>
