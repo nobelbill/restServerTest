@@ -8,6 +8,8 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import org.springframework.web.bind.annotation.RequestParam;
+
 import com.nobelbill.restserver.dataset.Code;
 
 @Path("/test")
@@ -25,11 +27,11 @@ public class CodeService {
 		Code info = new Code();
 		return Response.status(200).entity(info).build();
 	}
-	
+
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
 	@Path("{mainCode}")
-	public Code get(@PathParam("mainCode")) String main_code){
+	public Code get(@RequestParam("mainCode") String main_code) {
 		return commonDao.selectCode(main_code);
 	}
 }
