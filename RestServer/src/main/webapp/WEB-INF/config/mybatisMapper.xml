@@ -9,6 +9,6 @@
 		<result column="CODE_NAME" property="codeName"/>
 	</resultMap>
   <select id="selectCode" resultType="String" resultMap="code">
-  	select * from tb_code where main_code=#{mainCode}
+  	select * from code where main_code=#{mainCode}
   </select>
 </mapper>
