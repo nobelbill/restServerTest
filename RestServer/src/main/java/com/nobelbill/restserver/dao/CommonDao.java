@@ -1,4 +1,4 @@
-package com.nobelbill.restserver.service;
+package com.nobelbill.restserver.dao;
 
 import com.nobelbill.restserver.dataset.Code;
 

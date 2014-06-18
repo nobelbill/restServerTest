@@ -10,6 +10,7 @@ import javax.ws.rs.core.Response;
 
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.nobelbill.restserver.dao.CommonDao;
 import com.nobelbill.restserver.dataset.Code;
 
 @Path("/test")

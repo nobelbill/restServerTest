@@ -1,4 +1,4 @@
-package com.nobelbill.restserver;
+package com.nobelbill.restserver.controller;
 
 import java.text.DateFormat;
 import java.util.Date;
